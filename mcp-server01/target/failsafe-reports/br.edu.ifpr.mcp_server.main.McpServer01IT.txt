@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.ifpr.mcp_server.main.McpServer01IT
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.953 s -- in br.edu.ifpr.mcp_server.main.McpServer01IT

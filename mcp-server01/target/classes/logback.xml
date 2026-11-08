@@ -1,0 +1,28 @@
+<configuration>
+   <!-- formato da saída do log no Console -->
+   <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+      <!--
+      A configuração à seguir é obrigatória, pois qualquer saída de dados no
+      console (System.out.print(ln)) vai "quebrar" o protocolo JSON-RPC, usado
+      na comunicação entre cliente, seja próprio ou Claude Desktop, p.ex., e
+      servidor.
+      -->
+      <target>System.err</target>
+      <encoder>
+         <charset>UTF-8</charset>
+         <pattern>
+            %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+         </pattern>
+      </encoder>
+   </appender>
+
+   <!-- nível de log padrão da aplicação -->
+   <root level="INFO">
+      <appender-ref ref="CONSOLE" />
+   </root>
+
+   <!--
+   ajusta o log dos pacotes da aplicação para exibições detalhadas (DEBUG)
+   -->
+   <logger name="br.edu.ifpr.mcp_server" level="DEBUG" />
+</configuration>

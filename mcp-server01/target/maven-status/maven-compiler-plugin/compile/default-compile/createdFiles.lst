@@ -1,0 +1,8 @@
+br\edu\ifpr\mcp_server\main\McpClient01SyncStdio.class
+br\edu\ifpr\mcp_server\mcp\utils\McpToolDefinition.class
+br\edu\ifpr\mcp_server\mcp\tools\ReadPdfMetadataTool.class
+br\edu\ifpr\mcp_server\mcp\services\PdfMetadataService.class
+br\edu\ifpr\mcp_server\mcp\tools\UpdatePdfMetadataTool.class
+br\edu\ifpr\mcp_server\main\McpServer01SyncStdio.class
+br\edu\ifpr\mcp_server\mcp\services\PdfMetadataService$PdfMetadataUpdate.class
+br\edu\ifpr\mcp_server\mcp\services\PdfMetadataService$PdfMetadata.class

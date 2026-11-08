@@ -1,0 +1,26 @@
+services:
+   # nome do serviço exibido na interface e pelos comandos do Docker
+   mcp-inspector:
+     # executa o "build" da imagem definido no arquivo "Dockerfile"
+     build:
+       context: .
+       dockerfile: Dockerfile
+     # nome do contêiner 
+     container_name: mcp-inspector
+     # servidor/ip e porta em que a aplicação responderá
+     ports:
+       - "127.0.0.1:6274:6274"
+     # 
+     # ro: read-only
+     volumes:
+       - ./server:/opt/mcp/server:ro
+       # Pasta compartilhada com o servidor dentro do contêiner para os PDFs.
+       - ./pdf-workspace:/opt/mcp/pdf-workspace
+     # Informa ao servidor qual diretório contém os PDFs autorizados.
+     environment:
+       MCP_PDF_WORKSPACE: /opt/mcp/pdf-workspace
+     # executa o servidor MCP em Java
+     command:
+       - java
+       - -jar
+       - /opt/mcp/server/mcp_server01_server.jar

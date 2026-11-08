@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.ifpr.mcp_server.mcp.services.PdfMetadataServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.094 s -- in br.edu.ifpr.mcp_server.mcp.services.PdfMetadataServiceTest
